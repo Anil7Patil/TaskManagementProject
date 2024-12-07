@@ -23,6 +23,7 @@ public class UserController {
 
     @PostMapping
     public User createUser(@RequestBody User user) {
+    	 System.out.println("Received User: " + user.getUsername());
         return userService.createUser(user);
     }
 

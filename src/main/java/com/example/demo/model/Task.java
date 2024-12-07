@@ -34,6 +34,7 @@ public class Task {
 	protected void OnCreate()
 	{
 		createdAt= LocalDateTime.now();
+		updatedAt=LocalDateTime.now();
 	}
 
 	public Integer getId() {
